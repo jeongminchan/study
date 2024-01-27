@@ -1,0 +1,23 @@
+JAVA 배열(Array)
+
+1. 배열 자료형
+배열 출력 - System.out.println(Arrays.toString(배열))
+배열 복사 - System.arraycopy(복사할 배열, 복사시작할 배열위치, 붙여넣을 배열, 복사된 배열 시작위치,지정된 길이)
+  , Arrays.copyOf(배열이름,배열요소 시작점, 끝점 지정)
+배열 정렬 - Arrays.sort(배열, {Collections.reverseOrder() (내림차순)})
+배열 비교 - Arrays.equals(비교대상 1,배교대상 2)
+
+2. 다차원 배열
+배열 출력 - System.out.println(Arrays.deepToString(배열))
+배열 복사 - Arrays.deepEquals(배열1, 배열2)
+
+3. 객체 배열
+배열 복사 - Arrays.copyOf, Arrays.copyOfRange (자료형과 동일)
+  but! 객체 배열 복사의 경우 주소 복사가 되기때문에 복사한 객체를 변경하면 복사된 멤버객체도 같이 변경됨(얕은 복사)
+배열 정렬 - 이름순, 나이순으로도 정렬가능
+  Comparable : compareTo() 메소드를 오버라이딩 정의하고 사용,
+  기본 타입은 물론 Boolean을 제외한 래퍼 클래스나 String, Time, Date와 같은 클래스의 인스턴스는 모두 정렬 가능
+  Comparator
+  comparing / thenComparing : 여러 조건 비교
+
+출처: https://inpa.tistory.com/entry/JAVA-☕-자바-배열Array-문법-응용-총정리 [Inpa Dev 👨‍💻:티스토리]
